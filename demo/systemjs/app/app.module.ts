@@ -5,11 +5,12 @@
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 import {AppComponent} from './app.component';
-import {ToastModule, ToastOptions} from 'ng2-toastr/ng2-toastr';
+import {ToastModule} from 'ng2-toastr/ng2-toastr';
 
-let config = <ToastOptions> {
+let config: any = {
   animate: 'flyRight',
-  positionClass: 'toast-bottom-right',
+  newestOnTop: false,
+  showCloseButton: true,
 };
 
 @NgModule({
